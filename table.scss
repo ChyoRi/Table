@@ -1,0 +1,134 @@
+@import './font.scss';
+
+$color-background: (
+  bg-01: #f8f9fa
+);
+
+$color: (
+  black-01: #242428,
+  gray-01: #62676c,
+  gray-02: #cccccc,
+  red-01: #fa2828
+);
+
+$color-line : (
+  line-01: #CFD0D7,
+  line-02: #ecedf2
+);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.table {
+  width: 1120px;
+  margin: 0 auto;
+  font-size: 14px;
+  border-collapse: collapse;
+
+  th {
+    background-color: map-get($color-background, bg-01);
+    color: map-get($color, gray-01);
+  }
+
+  &_01 {
+    margin-bottom: 100px;
+  
+    thead {
+      tr {
+        th {
+          padding: 14px 0;
+          border-top: 1px solid map-get($color-line, line-01);
+        }
+      }
+    }
+  
+    tbody {
+      tr {
+        td {
+          padding: 12px 0 15.63px 0;
+          text-align: center;
+          color: map-get($color, gray-01);
+  
+          &:first-of-type {
+            padding-left: 7.5px;
+          }
+  
+          &:last-of-type {
+            padding-right: 7.5px;
+          }
+        }
+      }
+    }
+  
+    th, td {
+      line-height: 20px;
+      font-weight: 700;
+    }
+  }
+
+  &_02 {
+    border-top: 1px solid map-get($color-line, line-01);
+    font-weight: 400;
+
+    tbody {
+
+      tr {
+        border-bottom: 1px solid map-get($color-line, line-02);
+      }
+
+      th {
+        padding: 9.72px 8px 9.72px 18px;
+        text-align: left;
+      }
+
+      td {
+        line-height: 22px;
+        padding: 14px 0 14px 18px;
+
+        .start_schedule {
+          &_title {
+            line-height: 16px;
+            font-size: 13px;
+            color: map-get($color, gray-01);
+          }
+
+          &_schedule {
+            line-height: 16px;
+            margin-top: 10px;
+            font-size: 15px;
+          }
+
+          .arrive {
+            line-height: 20px;
+            font-size: 11px;
+            color: map-get($color, gray-02);
+          }
+        }
+
+        li {
+          line-height: 26px;
+
+          span {
+            font-size: 11px;
+          }
+
+          &.color_point {
+            color: map-get($color, red-01);
+          }
+        }
+      }
+    }
+  }
+
+}
