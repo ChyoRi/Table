@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Table Guide</title>
-  <link rel="stylesheet" href="./table.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> -->
 </head>
 <body>
   <table class="table table_01">
+    <caption>상품정보 테이블</caption>
     <colgroup>
       <col width="300px"><col width="300px">
       <col width="250px"><col width="250px">
@@ -30,35 +32,45 @@
     </tbody>
   </table>
   <table class="table table_02">
+    <caption>상품정보 테이블</caption>
     <colgroup>
-      <col width="150px"><col />
+      <col width="150px"><col width="221px"/>
+      <col width="115px"><col />
     </colgroup>
     <tbody>
       <tr>
         <th scope="row">상품명</th>
-        <td>[전용차량][에어부산] 간사이 2박3일_4명이상 출발, 유니버셜스튜디오재팬TM 1일 프리패스 포함</td>
+        <td class="product_name" colspan="3">
+          <span>[전용차량][에어부산] 간사이 2박3일_4명이상 출발, 유니버셜스튜디오재팬TM 1일 프리패스 포함</span>
+        </td>
       </tr>
       <tr>
         <th scope="row">교통편</th>
-        <td>에어부산</td>
+        <td class="transport" colspan="3">
+          <span>에어부산</span>
+        </td>
       </tr>
       <tr>
         <th scope="row">여행일정</th>
-        <td>
-          <div class="start_schedule">
-            <span class="start_title">출발</span>
-            <p class="start_schedule">
+        <td class="start_schedule">
+          <div>
+            <span class="title">출발</span>
+            <p class="schedule">
               2023.03.01 (금) 09:25 <br />
-              <span class="arrive">현지도착 2023.03.02 (금) 10:55</span>
+              <span>현지도착 2023.03.02 (금) 10:55</span>
             </p>
           </div>
-          <div class="schedule">
-            2박 3일
+        </td>
+        <td class="schedule">
+          <div>
+            <span>2박 3일</span>
           </div>
-          <div class="finish_schedule">
-            <span class="finish_title">도착</span>
-              <p class="finish_schedule">
-                <span class="start">현지출발 2023.03.02 (금) 10:55</span>
+        </td>
+        <td class="finish_schedule">
+          <div class="finish_box">
+            <span class="title">도착</span>
+              <p class="schedule">
+                <span>현지출발 2023.03.02 (금) 10:55</span>
                 <br />
                 2023.03.08 (금) 11:25
               </p>
@@ -67,11 +79,13 @@
       </tr>
       <tr>
         <th scope="row">상품구성</th>
-        <td>6인~7인 출발 시 1인당 요금</td>
+        <td colspan="3">
+          <span>6인~7인 출발 시 1인당 요금</span>
+        </td>
       </tr>
       <tr>
         <th scope="row">상품가격</th>
-        <td>
+        <td colspan="3">
           <ul>
             <li>성인 1,089,000원</li>
             <li>소인 1,089,000원</li>
@@ -83,7 +97,7 @@
       </tr>
       <tr>
         <th scope="row">포함사항</th>
-        <td>
+        <td colspan="3">
           <ul>
             <li>왕복 항공권</li>
             <li>국내공항세/현지공항세/유류할증료/전쟁보험료/관광진흥개발기금</li>
@@ -98,12 +112,117 @@
       </tr>
       <tr>
         <th scope="row">불포함사항</th>
-        <td>
+        <td colspan="3">
           <ul>
             <li>중식 2회, 석식 2회 (1일차 석식/ 2일차 중,석식 / 3일차 중식 불포함)</li>
             <li>현지 개인경비</li>
             <li>출발전 PCR 검사 필요시 검사비용</li>
           </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="table table_03">
+    <caption>예약정보 테이블</caption>
+    <colgroup>
+      <col width="116px"><col width="255px">
+      <col width="116px"><col width="256px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th>상품명</th>
+        <td>[온천여행][오후출발/진에어] 큐슈 2박3일_이토시마/다자이후/벳부, 북큐슈 핵심일정 포함 ( JKPSLJ13684 )</td>
+        <th>교통편</th>
+        <td>진에어 (LJ223)</td>
+      </tr>
+      <tr>
+        <th>출발일정</th>
+        <td>
+          <p class="schedule">
+            출발 2023.03.10 (금) 12:00 <br />
+            <span>현지도착 2023.03.10 (금) 13:20</span>
+          </p>
+        </td>
+        <th>도착일정</th>
+        <td>
+          <p class="schedule">
+            <span>현지출발 2023.03.12 (일) 14:40</span><br />
+            도착 2023.03.12 (일) 16:10
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <th>상품구성</th>
+        <td>큐슈온천여행 2박3일</td>
+        <th>여행자정보</th>
+        <td>총 0명</td>
+      </tr>
+      <tr>
+        <th>결제수단</th>
+        <td>
+          <ul>
+            <li>신용카드간편결제</li>
+            <li>무통장입금</li>
+            <li>(입금안내 : 2017.03.21 23:59 까지</li>
+            <li>신한은행 56207543245332)</li>
+            <li>무통장입금</li>
+          </ul>
+        </td>
+        <th>예매채널</th>
+        <td>
+          <ul>
+            <li>온라인(PC웹)</li>
+            <li>온라인(모바일웹)</li>
+            <li>티켓링크앱</li>
+            <li>공연(경기)장 매표소</li>
+            <li>고객센터 전화예매</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>포함사항</th>
+        <td colspan="3" class="inclusion">
+          <ul>
+            <li>
+              진에어 왕복 항공권 (TAX, 유류할증료, 제세공과금)
+              <ul>
+                <li>※ 유류할증료, 국내공항세, 현지공항세, 전쟁보험료, 관광진흥개발기금 포함</li>
+              </ul>
+            </li>
+            <li>전 일정 숙박 (2인1실)</li>
+            <li>전 일정 일본전문 가이드 동반</li>
+            <li>NHN여행박사 전용차량</li>
+            <li>일정표 상의 식사 및 관광지 입장료</li>
+            <li>안전한 여행을 위한 해외 여행자 보험</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>불포함사항</th>
+        <td colspan="3" class="not_inclusion">
+          <ul>
+            <li>전 일정 1인 3,000엔의 가이드/기사 경비 (현지지불)</li>
+            <li>1일차 석식, 3일차 중식</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>문의</th>
+        <td>
+          <ul>
+            <li>담당자 : 이수지</li>
+            <li>전화 : 02-6717-2730</li>
+            <li>팩스 : 02-6008-5710</li>
+            <li>이메일 : leesuji1215@drtour.com</li>
+          </ul>
+        </td>
+        <th>상세정보</th>
+        <td>
+          <div class="detail">
+            <button>여행확정자료보기</button>
+            <button>표준약관보기</button>
+            <button>여행계약서동의하기</button>
+          </div>
         </td>
       </tr>
     </tbody>
