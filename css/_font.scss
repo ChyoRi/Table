@@ -8,6 +8,11 @@
 //        url('../font/NotoSansKR-Thin.woff2') format('woff2')
 // }
 
+@font-face {
+  font-family: "Noto Sans KR', sans-serif";
+  src: url('../font/NotoSansKR-Bold.ttf') format("truetype");
+}
+
 // @font-face {
 //   font-family: 'Roboto', sans-serif;
 //   src: url('../font/NotoSansKR-Black.woff2') format('woff2'),
@@ -18,11 +23,11 @@
 //        url('../font/NotoSansKR-Thin.woff2') format('woff2'),
 // }
 
-@font-face {
-  font-family: 'Noto Sans KR', sans-serif;
-  src: url('../font/NotoSansKR-Black.woff2') format('woff2');
-  font-weight: 900;
-}
+// @font-face {
+//   font-family: 'Noto Sans KR', sans-serif;
+//   src: url('C:\Users\이영철\OneDrive\바탕 화면\Table\font\NotoSansKR-Black.woff2') format('woff2');
+//   font-weight: 900;
+// }
 
 // @font-face {
 //   font-family: 'NotoSansKR-Bold';
