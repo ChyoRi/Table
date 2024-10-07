@@ -4,8 +4,8 @@
 
 .table {
   margin: 0 auto;
-  font-size: 14px;
   border-top: 1px solid map-get($color-line, line-01);
+  font-size: 14px;
 
   th {
     background-color: map-get($color-background, bg-01);
@@ -14,18 +14,28 @@
 
   &_01 {
     margin-bottom: 100px;
-  
-    thead {
-      tr {
-        th {
-          padding: 14px 0;
-          border-top: 1px solid map-get($color-line, line-01);
-        }
-      }
-    }
+    font-family: "Noto Sans KR";
+    font-weight: 700;
   
     tbody {
       tr {
+        &:last-of-type {
+          border-bottom: 0.63px solid map-get($color-line, line-02);
+        }
+        
+        th {
+          padding: 14px 0;
+          border-top: 1px solid map-get($color-line, line-01);
+
+          &:first-of-type {
+            padding-left: 7.03px;
+          }
+
+          &:last-of-type {
+            padding-right: 12.97px;
+          }
+        }
+
         td {
           padding: 12px 0 15.63px 0;
           text-align: center;
@@ -62,16 +72,17 @@
       th {
         padding: 9.72px 8px 9.72px 18px;
         text-align: left;
+        font-family: "Noto Sans KR";
         font-weight: 400;
       }
 
       td {
         padding: 14px 0 14px 18px;
-        font-family: "Roboto", sans-serif;
+        font-family: "Roboto";
         font-weight: 400;
 
         &.product_name, &.transport {
-          font-family: "Noto Sans KR", sans-serif;
+          font-family: "Noto Sans KR";
         }
 
         &.start_schedule, &.finish_schedule {
@@ -81,20 +92,23 @@
           }
           .title {
             line-height: 16px;
-            font-family: "Noto Sans KR", sans-serif;
+            font-family: "Noto Sans KR";
             font-size: 13px;
             color: map-get($color, gray-01);
+            letter-spacing: -0.39px;
           }
           
           .schedule {
             line-height: 16px;
             margin-top: 10px;
             font-size: 15px;
+            letter-spacing: -0.15px;
 
             span {
               line-height: 20px;
               font-size: 11px;
               color: map-get($color, gray-02);
+              letter-spacing: -0.11px;
             }
           }
         }
@@ -103,8 +117,10 @@
           text-align: center;
           span {
             line-height: 24px;
-            font-family: "Noto Sans KR", sans-serif;
+            font-family: "Noto Sans KR";
+            font-size: 16px;
             font-weight: 700;
+            letter-spacing: -0.48px;
           }
         }
 
@@ -126,11 +142,15 @@
           line-height: 22px;
         }
       }
+
+      th, td {
+        letter-spacing: -0.56px;
+      }
     }
   }
 
   &_03 {
-    font-weight: 400;
+    margin-bottom: 100px;
 
     tbody {
       tr {
@@ -141,10 +161,14 @@
           padding: 7px 8px 7px 18px;
           text-align: left;
           vertical-align: top;
+          font-family: "Noto Sans KR";
+          font-weight: 400;
+          letter-spacing: -0.56px;
         }
 
         .schedule {
           line-height: 22px;
+          font-family: "Roboto";
           font-size: 14px;
 
           span {
@@ -157,6 +181,7 @@
         .inclusion > ul > li, .not_inclusion > ul > li {
           position: relative;
           padding-left: 4px;
+          font-family: "Roboto";
 
           &::before {
             content: '';
@@ -175,11 +200,57 @@
           padding: 4px 12px 6px;
           border: 1px solid map-get($color-line, line-03);
           border-radius: 6px;
+          font-family: "Noto Sans KR";
           font-size: 13px;
+          font-weight: 400;
           letter-spacing: -0.39px;
+
+          &:first-of-type {
+            margin: 0 10px 14px 0;
+          }
         }
       }
     }
 
+  }
+
+  &_04 {
+    tbody {
+      tr {
+        border-bottom: 1px solid map-get($color-line, line-02);
+
+        th {
+          padding: 7px 8px 7px 18px;
+          text-align: left;
+        }
+  
+        td {
+          padding: 7px 20px 7px 0;
+          text-align: right;
+        }
+
+        td,th {
+          line-height: 22px;
+          font-family: "Noto Sans KR";
+          font-size: 14px;
+          font-weight: 400;
+          letter-spacing: -0.56px;
+        }
+
+        &.product_price td {
+          padding: 17px 20px 17px 0;
+          font-weight: 700;
+          color: map-get($color, red-01);
+        }
+
+        &.payment_detail td {
+          padding: 9px 20px 8px 0;
+        }
+
+        &.product_price th, &.payment_detail th{
+          background-color: transparent;
+        }
+      }
+    }
   }
 }

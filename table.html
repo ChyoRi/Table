@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Table Guide</title>
   <link rel="stylesheet" href="./css/style.css">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> -->
 </head>
 <body>
   <table class="table table_01">
@@ -14,15 +13,25 @@
       <col width="300px"><col width="300px">
       <col width="250px"><col width="250px">
     </colgroup>
-    <thead>
+    <tbody>
       <tr>
         <th>출발</th>
         <th>여정</th>
         <th>출발시간</th>
         <th>도착시간</th>
       </tr>
-    </thead>
-    <tbody>
+      <tr>
+        <td>에어부산 (BX000)</td>
+        <td>서울 - 제주도 (부산김해공-제주공항)</td>
+        <td>2023.03.24 (금)</td>
+        <td>2023.03.24 (금)</td>
+      </tr>
+      <tr>
+        <th>도착</th>
+        <th>여정</th>
+        <th>출발시간</th>
+        <th>도착시간</th>
+      </tr>
       <tr>
         <td>에어부산 (BX000)</td>
         <td>서울 - 제주도 (부산김해공-제주공항)</td>
@@ -130,20 +139,20 @@
     </colgroup>
     <tbody>
       <tr>
-        <th>상품명</th>
+        <th scope="row">상품명</th>
         <td>[온천여행][오후출발/진에어] 큐슈 2박3일_이토시마/다자이후/벳부, 북큐슈 핵심일정 포함 ( JKPSLJ13684 )</td>
-        <th>교통편</th>
+        <th scope="row">교통편</th>
         <td>진에어 (LJ223)</td>
       </tr>
       <tr>
-        <th>출발일정</th>
+        <th scope="row">출발일정</th>
         <td>
           <p class="schedule">
             출발 2023.03.10 (금) 12:00 <br />
             <span>현지도착 2023.03.10 (금) 13:20</span>
           </p>
         </td>
-        <th>도착일정</th>
+        <th scope="row">도착일정</th>
         <td>
           <p class="schedule">
             <span>현지출발 2023.03.12 (일) 14:40</span><br />
@@ -152,13 +161,13 @@
         </td>
       </tr>
       <tr>
-        <th>상품구성</th>
-        <td>큐슈온천여행 2박3일</td>
-        <th>여행자정보</th>
+        <th scope="row">상품구성</th>
+        <td>큐슈 온천여행 2박3일</td>
+        <th scope="row">여행자정보</th>
         <td>총 0명</td>
       </tr>
       <tr>
-        <th>결제수단</th>
+        <th scope="row">결제수단</th>
         <td>
           <ul>
             <li>신용카드간편결제</li>
@@ -168,7 +177,7 @@
             <li>무통장입금</li>
           </ul>
         </td>
-        <th>예매채널</th>
+        <th scope="row">예매채널</th>
         <td>
           <ul>
             <li>온라인(PC웹)</li>
@@ -180,7 +189,7 @@
         </td>
       </tr>
       <tr>
-        <th>포함사항</th>
+        <th scope="row">포함사항</th>
         <td colspan="3" class="inclusion">
           <ul>
             <li>
@@ -198,7 +207,7 @@
         </td>
       </tr>
       <tr>
-        <th>불포함사항</th>
+        <th scope="row">불포함사항</th>
         <td colspan="3" class="not_inclusion">
           <ul>
             <li>전 일정 1인 3,000엔의 가이드/기사 경비 (현지지불)</li>
@@ -207,7 +216,7 @@
         </td>
       </tr>
       <tr>
-        <th>문의</th>
+        <th scope="row">문의</th>
         <td>
           <ul>
             <li>담당자 : 이수지</li>
@@ -216,13 +225,58 @@
             <li>이메일 : leesuji1215@drtour.com</li>
           </ul>
         </td>
-        <th>상세정보</th>
+        <th scope="row">상세정보</th>
         <td>
           <div class="detail">
             <button>여행확정자료보기</button>
             <button>표준약관보기</button>
             <button>여행계약서동의하기</button>
           </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="table table_04">
+    <caption>여행자정보 테이블</caption>
+    <colgroup>
+      <col width="120px"><col width="242px">
+      <col width="120px"><col width="261px">  
+    </colgroup>
+    <tbody>
+      <tr>
+        <th scope="row">여행자명(한글)</th>
+        <td>이링크</td>
+        <th scope="row">여행자명(영문)</th>
+        <td>LEE LINK</td>
+      </tr>
+      <tr>
+        <th scope="row">생년월일</th>
+        <td>20000.01.01 (성인/남)</td>
+        <th scope="row">휴대전화</th>
+        <td>010-1234-5678</td>
+      </tr>
+      <tr>
+        <th scope="row">여권정보</th>
+        <td>
+          <p>
+            M00000000 <br />
+            (여권만료일 2029/01/01)
+          </p>
+        </td>
+        <th scope="row">예약상태</th>
+        <td>예약취소</td>
+      </tr>
+      <tr class="product_price">
+        <th scope="row">상품가격</th>
+        <td colspan="3">849,000원</td>
+      </tr>
+      <tr class="payment_detail">
+        <th scope="row">결제상세정보</th>
+        <td colspan="3">
+          <p>
+            기본상품가격(TAX포함) 849,000원 <br />
+            유류할증료 0원
+          </p>
         </td>
       </tr>
     </tbody>
