@@ -2,6 +2,15 @@
 @import './reset.scss';
 @import './variable.scss';
 
+.table_title {
+  line-height: 16px;
+  margin-bottom: 10px;
+  font-family: "Noto Sans KR";
+  font-size: 16px;
+  letter-spacing: -0.64px;
+  color: map-get($color, black-01);
+}
+
 .table {
   margin: 0 auto;
   border-top: 1px solid map-get($color-line, line-01);
@@ -13,7 +22,8 @@
   }
 
   &_01 {
-    margin-bottom: 100px;
+    width: 1120px;
+    margin-bottom: 30px;
     font-family: "Noto Sans KR";
     font-weight: 700;
   
@@ -49,18 +59,124 @@
             padding-right: 7.5px;
           }
         }
+
+        th, td {
+          line-height: 20px;
+        }
       }
-    }
-  
-    th, td {
-      line-height: 20px;
-      font-weight: 700;
     }
   }
 
   &_02 {
     width: 1120px;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
+    font-family: "Noto Sans KR";
+    color: map-get($color, gray-01);
+
+    tbody {
+      tr {
+        border-bottom: 0.63px solid map-get($color-line, line-02);
+
+        &:first-of-type {
+          border-bottom: none;
+        }
+
+        th {
+          padding: 14px 0px;
+
+          &:first-of-type {
+            padding-left: 7.03px;
+          }
+
+          &:last-of-type {
+            padding-right: 12.97px;
+          }
+        }
+
+        td {
+          text-align: center;
+          padding: 12px 10px;
+
+          &.charge {
+            text-align: left;
+          }
+
+          &[colspan="5"] {
+            font-weight: 700;
+          }
+        }
+
+        th, td {
+          line-height: 20px;
+          letter-spacing: -0.56px;
+        }
+      }
+    }
+  }
+
+  &_03 {
+    width: 1120px;
+    margin-bottom: 30px;
+    font-family: "Noto Sans KR";
+
+    thead {
+      th {
+        padding: 14px 0;
+
+        &:first-of-type {
+          padding-left: 7px;
+        }
+
+        &:last-of-type {
+          padding-right: 13px;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        border-bottom: 0.63px solid map-get($color-line, line-02);
+
+        td {
+          text-align: center;
+          padding: 12px 12.5px 15px 17.5px;
+          
+          .badge {
+            margin-right: 30px;
+            padding: 1px 17px 1px 18px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: -0.48px;
+            border: 1px solid;
+
+            &_navy {
+              color: map-get($color, navy-01);
+              border-color: map-get($color, navy-01);
+            }
+
+            &_yellow {
+              color: map-get($color, yellow-01);
+              border-color: map-get($color, yellow-01);
+            }
+
+            &_red {
+              color: map-get($color, red-02);
+              border-color: map-get($color, red-02);
+            }
+          }
+        }
+      }
+    }
+
+    th, td {
+      line-height: 20px;
+      letter-spacing: -0.56px;
+    }
+  }
+
+  &_04, &_05 {
+    width: 1120px;
+    margin-bottom: 30px;
     font-weight: 400;
 
     tbody {
@@ -115,6 +231,11 @@
 
         &.schedule {
           text-align: center;
+          img {
+            width: 15px;
+            height: 15px;
+            margin-right: 4.5px;
+          }
           span {
             line-height: 24px;
             font-family: "Noto Sans KR";
@@ -149,8 +270,8 @@
     }
   }
 
-  &_03 {
-    margin-bottom: 100px;
+  &_06 {
+    margin-bottom: 30px;
 
     tbody {
       tr {
@@ -214,7 +335,36 @@
 
   }
 
-  &_04 {
+  &_07 {
+    margin-bottom: 30px;
+    font-family: "Noto Sans KR";
+    letter-spacing: -0.56px;
+
+    thead {
+      th {
+        line-height: 20px;
+        padding: 14px 0;
+        color: map-get($color, gray-01);
+      }
+    }
+    tbody {
+      tr {
+        border-bottom: 0.63px solid map-get($color-line, line-02);
+
+        td {
+          line-height: 22px;
+          padding: 12px 0;
+          text-align: center;
+          font-weight: 400;
+          color: map-get($color, black-01);
+        }
+      }
+    }
+  }
+
+  &_08, &_09, &_10, &_11, &_12 {
+    margin-bottom: 30px;
+
     tbody {
       tr {
         border-bottom: 1px solid map-get($color-line, line-02);
@@ -227,6 +377,21 @@
         td {
           padding: 7px 20px 7px 0;
           text-align: right;
+
+          &.address {
+            text-align: left;
+            padding: 7px 0 7px 20px;
+          }
+
+          button {
+            line-height: 18px;
+            padding: 4px 5px 6px;
+            border: 1px solid map-get($color-line, line-03);
+            border-radius: 6px;
+            font-family: "Noto Sans KR";
+            font-size: 13px;
+            letter-spacing: -0.39px;
+          }
         }
 
         td,th {
@@ -249,6 +414,41 @@
 
         &.product_price th, &.payment_detail th{
           background-color: transparent;
+        }
+      }
+    }
+  }
+
+  &_10 {
+    margin-bottom: 10px;
+  }
+
+  &_13 {
+    thead {
+      th {
+        line-height: 20px;
+        padding: 14px 18px;
+        letter-spacing: -0.56px;
+      }
+    }
+    
+    tbody {
+      td {
+        padding: 9px 7.5px;
+        text-align: center;
+        vertical-align: top;
+        letter-spacing: -0.56px;
+
+        &:first-of-type {
+          padding-left: 18px;
+        }
+
+        &:last-of-type {
+          padding-right: 18px;
+        }
+
+        &.product_name {
+          text-align: left;
         }
       }
     }

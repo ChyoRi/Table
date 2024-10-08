@@ -7,8 +7,9 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+  <h5 class="table_title">여행_상세> 교통편 테이블</h5>
   <table class="table table_01">
-    <caption>상품정보 테이블</caption>
+    <caption>상품정보 교통편 테이블</caption>
     <colgroup>
       <col width="300px"><col width="300px">
       <col width="250px"><col width="250px">
@@ -40,7 +41,92 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="table_title">여행_상세> 가격 테이블</h5>
   <table class="table table_02">
+    <caption>상품정보 가격 테이블</caption>
+    <colgroup>
+      <col width="300px"><col width="200px">
+      <col width="200px"><col width="200px">
+      <col width="200px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th>상품구성(예약일 기준 가격)</th>
+        <th>성인</th>
+        <th>소인</th>
+        <th>유아</th>
+        <th>영아</th>
+      </tr>
+      <tr>
+        <td colspan="5">휘닉스 2박 + 왕복항공권 + 렌터카 1대</td>
+      </tr>
+      <tr>
+        <td class="charge">4인실 1인당 요금 (4인실 기준)</td>
+        <td>199,000원</td>
+        <td>199,000원</td>
+        <td>199,000원</td>
+        <td>0원</td>
+      </tr>
+      <tr>
+        <td class="charge">3인실 1인당 요금</td>
+        <td>199,000원</td>
+        <td>199,000원</td>
+        <td>199,000원</td>
+        <td>0원</td>
+      </tr>
+      <tr>
+        <td class="charge">2인실 1인당 요금</td>
+        <td>199,000원</td>
+        <td>199,000원</td>
+        <td>199,000원</td>
+        <td>0원</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="table_title">여행_상세> 여행지 안전정보 테이블</h5>
+  <table class="table table_03">
+    <caption>여행지 안전정보 테이블</caption>
+    <colgroup>
+      <col width="200px"><col />
+    </colgroup>
+    <thead>
+      <tr>
+        <th>여행경보단계</th>
+        <th>여행지(국가 또는 지역)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <span class="badge badge_navy">남색경보</span>
+          <span>여행유의</span>
+        </td>
+        <td>
+          적색경보 지정 지역을 제외한 전지역
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="badge badge_yellow">황색경보</span>
+          <span>여행자제</span>
+        </td>
+        <td>
+          적색경보 지정 지역을 제외한 전지역
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="badge badge_red">적색경보</span>
+          <span>철수권고</span>
+        </td>
+        <td>
+          후쿠시마 원전 반경 30km 이내 및 일본 정부 지정 피난지시구역
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="table_title">여행_예약하기> 상품정보 테이블</h5>
+  <table class="table table_04">
     <caption>상품정보 테이블</caption>
     <colgroup>
       <col width="150px"><col width="221px"/>
@@ -72,6 +158,7 @@
         </td>
         <td class="schedule">
           <div>
+            <img src="./img/airplane.svg" alt="비행기 아이콘">
             <span>2박 3일</span>
           </div>
         </td>
@@ -131,7 +218,69 @@
       </tr>
     </tbody>
   </table>
-  <table class="table table_03">
+  <h5 class="table_title">여행_예약완료> 상품정보 테이블</h5>
+  <table class="table table_05">
+    <caption>상품정보 테이블</caption>
+    <colgroup>
+      <col width="150px"><col width="221px"/>
+      <col width="115px"><col />
+    </colgroup>
+    <tbody>
+      <tr>
+        <th scope="row">상품명</th>
+        <td class="product_name" colspan="3">
+          <span>[전용차량][에어부산] 간사이 2박3일_4명이상 출발, 유니버셜스튜디오재팬TM 1일 프리패스 포함</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">교통편</th>
+        <td class="transport" colspan="3">
+          <span>에어부산</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">여행일정</th>
+        <td class="start_schedule">
+          <div>
+            <span class="title">출발</span>
+            <p class="schedule">
+              2023.03.01 (금) 09:25 <br />
+              <span>현지도착 2023.03.02 (금) 10:55</span>
+            </p>
+          </div>
+        </td>
+        <td class="schedule">
+          <div>
+            <span>2박 3일</span>
+          </div>
+        </td>
+        <td class="finish_schedule">
+          <div class="finish_box">
+            <span class="title">도착</span>
+              <p class="schedule">
+                <span>현지출발 2023.03.02 (금) 10:55</span>
+                <br />
+                2023.03.08 (금) 11:25
+              </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">상품구성</th>
+        <td colspan="3">
+          <span>6인~7인 출발 시 1인당 요금</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">여행인원</th>
+        <td colspan="3">
+          <span>총 3명</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="table_title">마이페이지_예매확인취소_상세> 예약정보 테이블</h5>
+  <table class="table table_06">
     <caption>예약정보 테이블</caption>
     <colgroup>
       <col width="116px"><col width="255px">
@@ -236,7 +385,38 @@
       </tr>
     </tbody>
   </table>
-  <table class="table table_04">
+  <h5 class="table_title">마이페이지_예매확인취소_상세> 교통편 테이블</h5>
+  <table class="table table_07">
+    <caption>교통편 테이블</caption>
+    <colgroup>
+      <col width="131.24px"><col width="171.62px">
+      <col width="220.07px"><col width="220.07px">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>출국/귀국편</th>
+        <th>여정</th>
+        <th>출발시간</th>
+        <th>도착시간</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>LJ223</td>
+        <td>인천공항-후쿠오카</td>
+        <td>2023.03.10 (금요일) 12:00</td>
+        <td>2023.03.10 (금요일) 13:20</td>
+      </tr>
+      <tr>
+        <td>LJ224</td>
+        <td>후쿠오카-인천공항</td>
+        <td>2023.03.12 (일요일) 14:40</td>
+        <td>2023.03.12 (일요일) 16:10</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="table_title">마이페이지_예매확인취소_상세> 여행자정보 테이블</h5>
+  <table class="table table_08">
     <caption>여행자정보 테이블</caption>
     <colgroup>
       <col width="120px"><col width="242px">
@@ -281,5 +461,174 @@
       </tr>
     </tbody>
   </table>
-</body>
+  <h5 class="table_title">마이페이지_예매확인취소_상세> 예약자정보 테이블</h5>
+  <table class="table table_09">
+    <caption>예약자정보 테이블</caption>
+    <colgroup>
+      <col width="120px"><col width="242px">
+      <col width="120px"><col width="261px">  
+    </colgroup>
+    <tbody>
+      <tr>
+        <th scope="row">예약자명</th>
+        <td>이링크</td>
+        <th scope="row">이메일주소</th>
+        <td>leelink@nhnlink.co.kr</td>
+      </tr>
+      <tr>
+        <th scope="row">생년월일</th>
+        <td>20000.01.01</td>
+        <th scope="row">휴대전화</th>
+        <td>010-1234-5678</td>
+      </tr>
+      <tr>
+        <th scope="row">주소</th>
+        <td colspan="3" class="address">
+          <p>
+            도로명주소: <br />
+            지번주소:
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="table_title">마이페이지_예매확인취소_상세> 결제내역 테이블</h5>
+  <table class="table table_10">
+    <caption>결제내역 테이블</caption>
+    <colgroup>
+      <col width="120px"><col width="242px">
+      <col width="120px"><col width="261px">  
+    </colgroup>
+    <tbody>
+      <tr>
+        <th scope="row">날짜</th>
+        <td>2023/01/05</td>
+        <th scope="row">구분</th>
+        <td>입금</td>
+      </tr>
+      <tr>
+        <th scope="row">결제방법</th>
+        <td>현금</td>
+        <th scope="row">입금계좌</th>
+        <td>010-1234-5678</td>
+      </tr>
+      <tr>
+        <th scope="row">금액</th>
+        <td>300,000</td>
+        <th scope="row">영수증</th>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="table table_11">
+    <caption>결제내역 테이블</caption>
+    <colgroup>
+      <col width="120px"><col width="242px">
+      <col width="120px"><col width="261px">  
+    </colgroup>
+    <tbody>
+      <tr>
+        <th scope="row">날짜</th>
+        <td>2023/01/05</td>
+        <th scope="row">구분</th>
+        <td>입금</td>
+      </tr>
+      <tr>
+        <th scope="row">결제방법</th>
+        <td>카드</td>
+        <th scope="row">입금계좌</th>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">금액</th>
+        <td>1,000</td>
+        <th scope="row">영수증</th>
+        <td>
+          <button>영수증 보기</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="table_title">마이페이지_예매확인취소_상세> 현금영수증 신청내역</h5>
+  <table class="table table_12">
+    <caption>현금영수증 신청내역 테이블</caption>
+    <colgroup>
+      <col width="120px"><col width="242px">
+      <col width="120px"><col width="261px">  
+    </colgroup>
+    <tbody>
+      <tr>
+        <th scope="row">발급요청일자</th>
+        <td>2023/01/05</td>
+        <th scope="row">발급금액</th>
+        <td>100,000원</td>
+      </tr>
+      <tr>
+        <th scope="row">발급구분</th>
+        <td>소득공제</td>
+        <th scope="row">발급요청자</th>
+        <td>이링크</td>
+      </tr>
+      <tr>
+        <th scope="row">발급한 번호</th>
+        <td>010-1234-5678</td>
+        <th scope="row">승인일자</th>
+        <td>2023-01-05 오후 3:24:00</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="table_title">마이페이지_예매내역> 여행 예약확인/취소 테이블</h5>
+  <table class="table table_13">
+    <caption>여행 예약확인/취소 테이블</caption>
+    <colgroup>
+      <col width="">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>예매일</th>
+        <th>예약번호</th>
+        <th>상품명</th>
+        <th>출발일</th>
+        <th>예약상태</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="reserve_day">2023.05.04 (화)</td>
+        <td class="reserve_number">G2023052330002</td>
+        <td class="product_name">[페닌슐라/5성급호텔][오후출발/비엣젯항공] <br /> 3박4일_다낭,호이안,바나산 국립공원</td>
+        <td class="start_date">2023.05.24 (수)</td>
+        <td class="reserve_state">예약접수</td>
+      </tr>
+      <tr>
+        <td class="reserve_day">2023.05.04 (화)</td>
+        <td class="reserve_number">G2023052330002</td>
+        <td class="product_name">[페닌슐라/5성급호텔][오후출발/비엣젯항공] <br /> 3박4일_다낭,호이안,바나산 국립공원</td>
+        <td class="start_date">2023.05.24 (수)</td>
+        <td class="reserve_state">예약접수</td>
+      </tr>
+      <tr>
+        <td class="reserve_day">2023.05.04 (화)</td>
+        <td class="reserve_number">G2023052330002</td>
+        <td class="product_name">[페닌슐라/5성급호텔][오후출발/비엣젯항공] <br /> 3박4일_다낭,호이안,바나산 국립공원</td>
+        <td class="start_date">2023.05.24 (수)</td>
+        <td class="reserve_state">예약접수</td>
+      </tr>
+      <tr>
+        <td class="reserve_day">2023.05.04 (화)</td>
+        <td class="reserve_number">G2023052330002</td>
+        <td class="product_name">[페닌슐라/5성급호텔][오후출발/비엣젯항공] <br /> 3박4일_다낭,호이안,바나산 국립공원</td>
+        <td class="start_date">2023.05.24 (수)</td>
+        <td class="reserve_state">예약접수</td>
+      </tr>
+      <tr>
+        <td class="reserve_day">2023.05.04 (화)</td>
+        <td class="reserve_number">G2023052330002</td>
+        <td class="product_name">[페닌슐라/5성급호텔][오후출발/비엣젯항공] <br /> 3박4일_다낭,호이안,바나산 국립공원</td>
+        <td class="start_date">2023.05.24 (수)</td>
+        <td class="reserve_state">예약접수</td>
+      </tr>
+    </tbody>
+  </table>
+</body> 
 </html>

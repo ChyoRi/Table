@@ -71,6 +71,8 @@
 
 body {
   width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
 }
 
 li {
@@ -96,6 +98,15 @@ button {
   cursor: pointer;
 }
 
+.table_title {
+  line-height: 16px;
+  margin-bottom: 10px;
+  font-family: "Noto Sans KR";
+  font-size: 16px;
+  letter-spacing: -0.64px;
+  color: #242428;
+}
+
 .table {
   margin: 0 auto;
   border-top: 1px solid #CFD0D7;
@@ -106,7 +117,8 @@ button {
   color: #62676c;
 }
 .table_01 {
-  margin-bottom: 100px;
+  width: 1120px;
+  margin-bottom: 30px;
   font-family: "Noto Sans KR";
   font-weight: 700;
 }
@@ -134,90 +146,174 @@ button {
 .table_01 tbody tr td:last-of-type {
   padding-right: 7.5px;
 }
-.table_01 th, .table_01 td {
+.table_01 tbody tr th, .table_01 tbody tr td {
   line-height: 20px;
-  font-weight: 700;
 }
 .table_02 {
   width: 1120px;
-  margin-bottom: 100px;
-  font-weight: 400;
+  margin-bottom: 30px;
+  font-family: "Noto Sans KR";
+  color: #62676c;
 }
 .table_02 tbody tr {
+  border-bottom: 0.63px solid #ecedf2;
+}
+.table_02 tbody tr:first-of-type {
+  border-bottom: none;
+}
+.table_02 tbody tr th {
+  padding: 14px 0px;
+}
+.table_02 tbody tr th:first-of-type {
+  padding-left: 7.03px;
+}
+.table_02 tbody tr th:last-of-type {
+  padding-right: 12.97px;
+}
+.table_02 tbody tr td {
+  text-align: center;
+  padding: 12px 10px;
+}
+.table_02 tbody tr td.charge {
+  text-align: left;
+}
+.table_02 tbody tr td[colspan="5"] {
+  font-weight: 700;
+}
+.table_02 tbody tr th, .table_02 tbody tr td {
+  line-height: 20px;
+  letter-spacing: -0.56px;
+}
+.table_03 {
+  width: 1120px;
+  margin-bottom: 30px;
+  font-family: "Noto Sans KR";
+}
+.table_03 thead th {
+  padding: 14px 0;
+}
+.table_03 thead th:first-of-type {
+  padding-left: 7px;
+}
+.table_03 thead th:last-of-type {
+  padding-right: 13px;
+}
+.table_03 tbody tr {
+  border-bottom: 0.63px solid #ecedf2;
+}
+.table_03 tbody tr td {
+  text-align: center;
+  padding: 12px 12.5px 15px 17.5px;
+}
+.table_03 tbody tr td .badge {
+  margin-right: 30px;
+  padding: 1px 17px 1px 18px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.48px;
+  border: 1px solid;
+}
+.table_03 tbody tr td .badge_navy {
+  color: #0F41a9;
+  border-color: #0F41a9;
+}
+.table_03 tbody tr td .badge_yellow {
+  color: #ebb102;
+  border-color: #ebb102;
+}
+.table_03 tbody tr td .badge_red {
+  color: #f32727;
+  border-color: #f32727;
+}
+.table_03 th, .table_03 td {
+  line-height: 20px;
+  letter-spacing: -0.56px;
+}
+.table_04, .table_05 {
+  width: 1120px;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+.table_04 tbody tr, .table_05 tbody tr {
   border-bottom: 1px solid #ecedf2;
 }
-.table_02 tbody th {
+.table_04 tbody th, .table_05 tbody th {
   padding: 9.72px 8px 9.72px 18px;
   text-align: left;
   font-family: "Noto Sans KR";
   font-weight: 400;
 }
-.table_02 tbody td {
+.table_04 tbody td, .table_05 tbody td {
   padding: 14px 0 14px 18px;
   font-family: "Roboto";
   font-weight: 400;
 }
-.table_02 tbody td.product_name, .table_02 tbody td.transport {
+.table_04 tbody td.product_name, .table_04 tbody td.transport, .table_05 tbody td.product_name, .table_05 tbody td.transport {
   font-family: "Noto Sans KR";
 }
-.table_02 tbody td.start_schedule .finish_box, .table_02 tbody td.finish_schedule .finish_box {
+.table_04 tbody td.start_schedule .finish_box, .table_04 tbody td.finish_schedule .finish_box, .table_05 tbody td.start_schedule .finish_box, .table_05 tbody td.finish_schedule .finish_box {
   text-align: right;
   width: 219px;
 }
-.table_02 tbody td.start_schedule .title, .table_02 tbody td.finish_schedule .title {
+.table_04 tbody td.start_schedule .title, .table_04 tbody td.finish_schedule .title, .table_05 tbody td.start_schedule .title, .table_05 tbody td.finish_schedule .title {
   line-height: 16px;
   font-family: "Noto Sans KR";
   font-size: 13px;
   color: #62676c;
   letter-spacing: -0.39px;
 }
-.table_02 tbody td.start_schedule .schedule, .table_02 tbody td.finish_schedule .schedule {
+.table_04 tbody td.start_schedule .schedule, .table_04 tbody td.finish_schedule .schedule, .table_05 tbody td.start_schedule .schedule, .table_05 tbody td.finish_schedule .schedule {
   line-height: 16px;
   margin-top: 10px;
   font-size: 15px;
   letter-spacing: -0.15px;
 }
-.table_02 tbody td.start_schedule .schedule span, .table_02 tbody td.finish_schedule .schedule span {
+.table_04 tbody td.start_schedule .schedule span, .table_04 tbody td.finish_schedule .schedule span, .table_05 tbody td.start_schedule .schedule span, .table_05 tbody td.finish_schedule .schedule span {
   line-height: 20px;
   font-size: 11px;
   color: #cccccc;
   letter-spacing: -0.11px;
 }
-.table_02 tbody td.schedule {
+.table_04 tbody td.schedule, .table_05 tbody td.schedule {
   text-align: center;
 }
-.table_02 tbody td.schedule span {
+.table_04 tbody td.schedule img, .table_05 tbody td.schedule img {
+  width: 15px;
+  height: 15px;
+  margin-right: 4.5px;
+}
+.table_04 tbody td.schedule span, .table_05 tbody td.schedule span {
   line-height: 24px;
   font-family: "Noto Sans KR";
   font-size: 16px;
   font-weight: 700;
   letter-spacing: -0.48px;
 }
-.table_02 tbody td.schedule, .table_02 tbody td.finish_schedule {
+.table_04 tbody td.schedule, .table_04 tbody td.finish_schedule, .table_05 tbody td.schedule, .table_05 tbody td.finish_schedule {
   padding-left: 0;
 }
-.table_02 tbody td li {
+.table_04 tbody td li, .table_05 tbody td li {
   line-height: 26px;
 }
-.table_02 tbody td li span {
+.table_04 tbody td li span, .table_05 tbody td li span {
   font-size: 11px;
 }
-.table_02 tbody td li.color_point {
+.table_04 tbody td li.color_point, .table_05 tbody td li.color_point {
   color: #fa2828;
 }
-.table_02 tbody td > span {
+.table_04 tbody td > span, .table_05 tbody td > span {
   line-height: 22px;
 }
-.table_02 tbody th, .table_02 tbody td {
+.table_04 tbody th, .table_04 tbody td, .table_05 tbody th, .table_05 tbody td {
   letter-spacing: -0.56px;
 }
-.table_03 {
-  margin-bottom: 100px;
+.table_06 {
+  margin-bottom: 30px;
 }
-.table_03 tbody tr {
+.table_06 tbody tr {
   border-bottom: 1px solid #ecedf2;
 }
-.table_03 tbody tr th, .table_03 tbody tr td {
+.table_06 tbody tr th, .table_06 tbody tr td {
   line-height: 22px;
   padding: 7px 8px 7px 18px;
   text-align: left;
@@ -226,22 +322,22 @@ button {
   font-weight: 400;
   letter-spacing: -0.56px;
 }
-.table_03 tbody tr .schedule {
+.table_06 tbody tr .schedule {
   line-height: 22px;
   font-family: "Roboto";
   font-size: 14px;
 }
-.table_03 tbody tr .schedule span {
+.table_06 tbody tr .schedule span {
   line-height: 22px;
   font-size: 11px;
   color: #cccccc;
 }
-.table_03 tbody tr .inclusion > ul > li, .table_03 tbody tr .not_inclusion > ul > li {
+.table_06 tbody tr .inclusion > ul > li, .table_06 tbody tr .not_inclusion > ul > li {
   position: relative;
   padding-left: 4px;
   font-family: "Roboto";
 }
-.table_03 tbody tr .inclusion > ul > li::before, .table_03 tbody tr .not_inclusion > ul > li::before {
+.table_06 tbody tr .inclusion > ul > li::before, .table_06 tbody tr .not_inclusion > ul > li::before {
   content: "";
   position: absolute;
   top: 10px;
@@ -251,7 +347,7 @@ button {
   height: 2px;
   background-color: #62676c;
 }
-.table_03 tbody tr .detail > button {
+.table_06 tbody tr .detail > button {
   line-height: 18px;
   padding: 4px 12px 6px;
   border: 1px solid #dcdde1;
@@ -261,35 +357,94 @@ button {
   font-weight: 400;
   letter-spacing: -0.39px;
 }
-.table_03 tbody tr .detail > button:first-of-type {
+.table_06 tbody tr .detail > button:first-of-type {
   margin: 0 10px 14px 0;
 }
-.table_04 tbody tr {
+.table_07 {
+  margin-bottom: 30px;
+  font-family: "Noto Sans KR";
+  letter-spacing: -0.56px;
+}
+.table_07 thead th {
+  line-height: 20px;
+  padding: 14px 0;
+  color: #62676c;
+}
+.table_07 tbody tr {
+  border-bottom: 0.63px solid #ecedf2;
+}
+.table_07 tbody tr td {
+  line-height: 22px;
+  padding: 12px 0;
+  text-align: center;
+  font-weight: 400;
+  color: #242428;
+}
+.table_08, .table_09, .table_10, .table_11, .table_12 {
+  margin-bottom: 30px;
+}
+.table_08 tbody tr, .table_09 tbody tr, .table_10 tbody tr, .table_11 tbody tr, .table_12 tbody tr {
   border-bottom: 1px solid #ecedf2;
 }
-.table_04 tbody tr th {
+.table_08 tbody tr th, .table_09 tbody tr th, .table_10 tbody tr th, .table_11 tbody tr th, .table_12 tbody tr th {
   padding: 7px 8px 7px 18px;
   text-align: left;
 }
-.table_04 tbody tr td {
+.table_08 tbody tr td, .table_09 tbody tr td, .table_10 tbody tr td, .table_11 tbody tr td, .table_12 tbody tr td {
   padding: 7px 20px 7px 0;
   text-align: right;
 }
-.table_04 tbody tr td, .table_04 tbody tr th {
+.table_08 tbody tr td.address, .table_09 tbody tr td.address, .table_10 tbody tr td.address, .table_11 tbody tr td.address, .table_12 tbody tr td.address {
+  text-align: left;
+  padding: 7px 0 7px 20px;
+}
+.table_08 tbody tr td button, .table_09 tbody tr td button, .table_10 tbody tr td button, .table_11 tbody tr td button, .table_12 tbody tr td button {
+  line-height: 18px;
+  padding: 4px 5px 6px;
+  border: 1px solid #dcdde1;
+  border-radius: 6px;
+  font-family: "Noto Sans KR";
+  font-size: 13px;
+  letter-spacing: -0.39px;
+}
+.table_08 tbody tr td, .table_08 tbody tr th, .table_09 tbody tr td, .table_09 tbody tr th, .table_10 tbody tr td, .table_10 tbody tr th, .table_11 tbody tr td, .table_11 tbody tr th, .table_12 tbody tr td, .table_12 tbody tr th {
   line-height: 22px;
   font-family: "Noto Sans KR";
   font-size: 14px;
   font-weight: 400;
   letter-spacing: -0.56px;
 }
-.table_04 tbody tr.product_price td {
+.table_08 tbody tr.product_price td, .table_09 tbody tr.product_price td, .table_10 tbody tr.product_price td, .table_11 tbody tr.product_price td, .table_12 tbody tr.product_price td {
   padding: 17px 20px 17px 0;
   font-weight: 700;
   color: #fa2828;
 }
-.table_04 tbody tr.payment_detail td {
+.table_08 tbody tr.payment_detail td, .table_09 tbody tr.payment_detail td, .table_10 tbody tr.payment_detail td, .table_11 tbody tr.payment_detail td, .table_12 tbody tr.payment_detail td {
   padding: 9px 20px 8px 0;
 }
-.table_04 tbody tr.product_price th, .table_04 tbody tr.payment_detail th {
+.table_08 tbody tr.product_price th, .table_08 tbody tr.payment_detail th, .table_09 tbody tr.product_price th, .table_09 tbody tr.payment_detail th, .table_10 tbody tr.product_price th, .table_10 tbody tr.payment_detail th, .table_11 tbody tr.product_price th, .table_11 tbody tr.payment_detail th, .table_12 tbody tr.product_price th, .table_12 tbody tr.payment_detail th {
   background-color: transparent;
+}
+.table_10 {
+  margin-bottom: 10px;
+}
+.table_13 thead th {
+  line-height: 20px;
+  padding: 14px 18px;
+  letter-spacing: -0.56px;
+}
+.table_13 tbody td {
+  padding: 9px 7.5px;
+  text-align: center;
+  vertical-align: top;
+  letter-spacing: -0.56px;
+}
+.table_13 tbody td:first-of-type {
+  padding-left: 18px;
+}
+.table_13 tbody td:last-of-type {
+  padding-right: 18px;
+}
+.table_13 tbody td.product_name {
+  text-align: left;
 }
