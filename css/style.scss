@@ -1,456 +1,51 @@
 @import './font.scss';
 @import './reset.scss';
 @import './variable.scss';
+@import './mixin.scss';
+@import './table.scss';
 
-.table_title {
-  line-height: 16px;
-  margin-bottom: 10px;
+#footer {
+  border-top: 1px solid map-get($color, black-01);
   font-family: "Noto Sans KR";
-  font-size: 16px;
-  letter-spacing: -0.64px;
-  color: map-get($color, black-01);
-}
 
-.table {
-  margin: 0 auto;
-  border-top: 1px solid map-get($color-line, line-01);
-  font-size: 14px;
+  .footer_menu_wrap {
+    padding: 15px 0 17px;
+    border-bottom: 1px solid map-get($color-line, line-02);
 
-  th {
-    background-color: map-get($color-background, bg-01);
-    color: map-get($color, gray-01);
-  }
+    .footer_menu {
+      width: 1120px;
+      margin: 0 auto;
+      @include flex(center, start);
 
-  &_01 {
-    width: 1120px;
-    margin-bottom: 30px;
-    font-family: "Noto Sans KR";
-    font-weight: 700;
-  
-    tbody {
-      tr {
-        &:last-of-type {
-          border-bottom: 0.63px solid map-get($color-line, line-02);
-        }
-        
-        th {
-          padding: 14px 0;
-          border-top: 1px solid map-get($color-line, line-01);
-
-          &:first-of-type {
-            padding-left: 7.03px;
-          }
-
-          &:last-of-type {
-            padding-right: 12.97px;
-          }
-        }
-
-        td {
-          padding: 12px 0 15.63px 0;
-          text-align: center;
-          color: map-get($color, gray-01);
-  
-          &:first-of-type {
-            padding-left: 7.5px;
-          }
-  
-          &:last-of-type {
-            padding-right: 7.5px;
-          }
-        }
-
-        th, td {
-          line-height: 20px;
-        }
-      }
-    }
-  }
-
-  &_02 {
-    width: 1120px;
-    margin-bottom: 30px;
-    font-family: "Noto Sans KR";
-    color: map-get($color, gray-01);
-
-    tbody {
-      tr {
-        border-bottom: 0.63px solid map-get($color-line, line-02);
-
-        &:first-of-type {
-          border-bottom: none;
-        }
-
-        th {
-          padding: 14px 0px;
-
-          &:first-of-type {
-            padding-left: 7.03px;
-          }
-
-          &:last-of-type {
-            padding-right: 12.97px;
-          }
-        }
-
-        td {
-          text-align: center;
-          padding: 12px 10px;
-
-          &.charge {
-            text-align: left;
-          }
-
-          &[colspan="5"] {
-            font-weight: 700;
-          }
-        }
-
-        th, td {
-          line-height: 20px;
-          letter-spacing: -0.56px;
-        }
-      }
-    }
-  }
-
-  &_03 {
-    width: 1120px;
-    margin-bottom: 30px;
-    font-family: "Noto Sans KR";
-
-    thead {
-      th {
-        padding: 14px 0;
-
-        &:first-of-type {
-          padding-left: 7px;
-        }
-
-        &:last-of-type {
-          padding-right: 13px;
-        }
-      }
-    }
-
-    tbody {
-      tr {
-        border-bottom: 0.63px solid map-get($color-line, line-02);
-
-        td {
-          text-align: center;
-          padding: 12px 12.5px 15px 17.5px;
-          
-          .badge {
-            margin-right: 30px;
-            padding: 1px 17px 1px 18px;
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: -0.48px;
-            border: 1px solid;
-
-            &_navy {
-              color: map-get($color, navy-01);
-              border-color: map-get($color, navy-01);
-            }
-
-            &_yellow {
-              color: map-get($color, yellow-01);
-              border-color: map-get($color, yellow-01);
-            }
-
-            &_red {
-              color: map-get($color, red-02);
-              border-color: map-get($color, red-02);
-            }
-          }
-        }
-      }
-    }
-
-    th, td {
-      line-height: 20px;
-      letter-spacing: -0.56px;
-    }
-  }
-
-  &_04, &_05 {
-    width: 1120px;
-    margin-bottom: 30px;
-    font-weight: 400;
-
-    tbody {
-
-      tr {
-        border-bottom: 1px solid map-get($color-line, line-02);
-      }
-
-      th {
-        padding: 9.72px 8px 9.72px 18px;
-        text-align: left;
-        font-family: "Noto Sans KR";
+      &_item {
+        @include flex(center, center);
+        line-height: 18px;
+        font-size: 13px;
         font-weight: 400;
-      }
+        letter-spacing: -0.39px;
 
-      td {
-        padding: 14px 0 14px 18px;
-        font-family: "Roboto";
-        font-weight: 400;
-
-        &.product_name, &.transport {
-          font-family: "Noto Sans KR";
-        }
-
-        &.start_schedule, &.finish_schedule {
-          .finish_box {
-            text-align: right;
-            width: 219px;
-          }
-          .title {
-            line-height: 16px;
-            font-family: "Noto Sans KR";
-            font-size: 13px;
-            color: map-get($color, gray-01);
-            letter-spacing: -0.39px;
-          }
-          
-          .schedule {
-            line-height: 16px;
-            margin-top: 10px;
-            font-size: 15px;
-            letter-spacing: -0.15px;
-
-            span {
-              line-height: 20px;
-              font-size: 11px;
-              color: map-get($color, gray-02);
-              letter-spacing: -0.11px;
-            }
-          }
-        }
-
-        &.schedule {
-          text-align: center;
-          img {
-            width: 15px;
-            height: 15px;
-            margin-right: 4.5px;
-          }
-          span {
-            line-height: 24px;
-            font-family: "Noto Sans KR";
-            font-size: 16px;
-            font-weight: 700;
-            letter-spacing: -0.48px;
-          }
-        }
-
-        &.schedule, &.finish_schedule {
-          padding-left: 0;
-        }
-
-        li {
-          line-height: 26px;
-          span {
-            font-size: 11px;
-          }
-          &.color_point {
-            color: map-get($color, red-01);
-          }
-        }
-
-        & > span {
-          line-height: 22px;
-        }
-      }
-
-      th, td {
-        letter-spacing: -0.56px;
-      }
-    }
-  }
-
-  &_06 {
-    margin-bottom: 30px;
-
-    tbody {
-      tr {
-        border-bottom: 1px solid map-get($color-line, line-02);
-
-        th, td {
-          line-height: 22px;
-          padding: 7px 8px 7px 18px;
-          text-align: left;
-          vertical-align: top;
-          font-family: "Noto Sans KR";
-          font-weight: 400;
-          letter-spacing: -0.56px;
-        }
-
-        .schedule {
-          line-height: 22px;
-          font-family: "Roboto";
-          font-size: 14px;
-
-          span {
-            line-height: 22px;
-            font-size: 11px;
-            color: map-get($color, gray-02);
-          }
-        }
-
-        .inclusion > ul > li, .not_inclusion > ul > li {
-          position: relative;
-          padding-left: 4px;
-          font-family: "Roboto";
-
-          &::before {
-            content: '';
-            position: absolute;
-            top: 10px;
-            left: 0;
-            display: block;
-            width: 2px;
-            height: 2px;
-            background-color: map-get($color, gray-01);
-          }
-        }
-
-        .detail > button {
-          line-height: 18px;
-          padding: 4px 12px 6px;
-          border: 1px solid map-get($color-line, line-03);
-          border-radius: 6px;
-          font-family: "Noto Sans KR";
-          font-size: 13px;
-          font-weight: 400;
-          letter-spacing: -0.39px;
-
-          &:first-of-type {
-            margin: 0 10px 14px 0;
-          }
-        }
-      }
-    }
-
-  }
-
-  &_07 {
-    margin-bottom: 30px;
-    font-family: "Noto Sans KR";
-    letter-spacing: -0.56px;
-
-    thead {
-      th {
-        line-height: 20px;
-        padding: 14px 0;
-        color: map-get($color, gray-01);
-      }
-    }
-    tbody {
-      tr {
-        border-bottom: 0.63px solid map-get($color-line, line-02);
-
-        td {
-          line-height: 22px;
-          padding: 12px 0;
-          text-align: center;
-          font-weight: 400;
-          color: map-get($color, black-01);
-        }
-      }
-    }
-  }
-
-  &_08, &_09, &_10, &_11, &_12 {
-    margin-bottom: 30px;
-
-    tbody {
-      tr {
-        border-bottom: 1px solid map-get($color-line, line-02);
-
-        th {
-          padding: 7px 8px 7px 18px;
-          text-align: left;
-        }
-  
-        td {
-          padding: 7px 20px 7px 0;
-          text-align: right;
-
-          &.address {
-            text-align: left;
-            padding: 7px 0 7px 20px;
-          }
-
-          button {
-            line-height: 18px;
-            padding: 4px 5px 6px;
-            border: 1px solid map-get($color-line, line-03);
-            border-radius: 6px;
-            font-family: "Noto Sans KR";
-            font-size: 13px;
-            letter-spacing: -0.39px;
-          }
-        }
-
-        td,th {
-          line-height: 22px;
-          font-family: "Noto Sans KR";
-          font-size: 14px;
-          font-weight: 400;
-          letter-spacing: -0.56px;
-        }
-
-        &.product_price td {
-          padding: 17px 20px 17px 0;
+        &.text_bold {
           font-weight: 700;
-          color: map-get($color, red-01);
         }
 
-        &.payment_detail td {
-          padding: 9px 20px 8px 0;
-        }
-
-        &.product_price th, &.payment_detail th{
-          background-color: transparent;
+        &::after {
+          content: '';
+          display: block;
+          width: 1px;
+          height: 12px;
+          margin: 0 20px;
+          background-color: map-get($color-line, line-01);
         }
       }
     }
   }
 
-  &_10 {
-    margin-bottom: 10px;
-  }
+  .footer_contents {
+    width: 1120px;
+    margin: 0 auto;
 
-  &_13 {
-    thead {
-      th {
-        line-height: 20px;
-        padding: 14px 18px;
-        letter-spacing: -0.56px;
-      }
-    }
-    
-    tbody {
-      td {
-        padding: 9px 7.5px;
-        text-align: center;
-        vertical-align: top;
-        letter-spacing: -0.56px;
-
-        &:first-of-type {
-          padding-left: 18px;
-        }
-
-        &:last-of-type {
-          padding-right: 18px;
-        }
-
-        &.product_name {
-          text-align: left;
-        }
-      }
+    .company_info_wrap {
+      margin-top: 26px;
     }
   }
 }

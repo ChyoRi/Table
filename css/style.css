@@ -71,7 +71,6 @@
 
 body {
   width: 100%;
-  max-width: 1120px;
   margin: 0 auto;
 }
 
@@ -117,7 +116,6 @@ button {
   color: #62676c;
 }
 .table_01 {
-  width: 1120px;
   margin-bottom: 30px;
   font-family: "Noto Sans KR";
   font-weight: 700;
@@ -447,4 +445,47 @@ button {
 }
 .table_13 tbody td.product_name {
   text-align: left;
+}
+
+#footer {
+  border-top: 1px solid #242428;
+  font-family: "Noto Sans KR";
+}
+#footer .footer_menu_wrap {
+  padding: 15px 0 17px;
+  border-bottom: 1px solid #ecedf2;
+}
+#footer .footer_menu_wrap .footer_menu {
+  width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+#footer .footer_menu_wrap .footer_menu_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 18px;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: -0.39px;
+}
+#footer .footer_menu_wrap .footer_menu_item.text_bold {
+  font-weight: 700;
+}
+#footer .footer_menu_wrap .footer_menu_item::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 12px;
+  margin: 0 20px;
+  background-color: #CFD0D7;
+}
+#footer .footer_contents {
+  width: 1120px;
+  margin: 0 auto;
+}
+#footer .footer_contents .company_info_wrap {
+  margin-top: 26px;
 }
