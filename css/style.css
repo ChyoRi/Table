@@ -140,27 +140,26 @@ a {
   border-top: 1px solid #CFD0D7;
 }
 .table_01 tbody tr th:first-of-type {
-  padding-left: 7.03px;
+  padding-left: 7px;
 }
 .table_01 tbody tr th:last-of-type {
-  padding-right: 12.97px;
+  padding-right: 13px;
 }
 .table_01 tbody tr td {
-  padding: 12px 0 15.63px 0;
+  padding: 18px 0 21px;
   text-align: center;
   color: #62676c;
 }
 .table_01 tbody tr td:first-of-type {
-  padding-left: 7.5px;
+  padding-left: 7px;
 }
 .table_01 tbody tr td:last-of-type {
-  padding-right: 7.5px;
+  padding-right: 13px;
 }
 .table_01 tbody tr th, .table_01 tbody tr td {
   line-height: 20px;
 }
 .table_02 {
-  width: 1120px;
   margin-bottom: 30px;
   font-family: "Noto Sans KR";
   color: #62676c;
@@ -175,20 +174,25 @@ a {
   padding: 14px 0px;
 }
 .table_02 tbody tr th:first-of-type {
-  padding-left: 7.03px;
+  padding-left: 7px;
 }
 .table_02 tbody tr th:last-of-type {
-  padding-right: 12.97px;
+  padding-right: 13px;
 }
 .table_02 tbody tr td {
   text-align: center;
-  padding: 12px 10px;
+  padding: 12px 0 15px;
 }
 .table_02 tbody tr td.charge {
+  padding-left: 10px;
   text-align: left;
 }
 .table_02 tbody tr td[colspan="5"] {
+  padding: 27px 0 25px;
   font-weight: 700;
+}
+.table_02 tbody tr td.infant {
+  padding-right: 10px;
 }
 .table_02 tbody tr th, .table_02 tbody tr td {
   line-height: 20px;
@@ -213,11 +217,12 @@ a {
 }
 .table_03 tbody tr td {
   text-align: center;
-  padding: 12px 12.5px 15px 17.5px;
+  padding: 18px 0 21px;
 }
 .table_03 tbody tr td .badge {
+  line-height: 20px;
   margin-right: 30px;
-  padding: 1px 17px 1px 18px;
+  padding: 2px 18px 2px 19px;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: -0.48px;
@@ -235,6 +240,12 @@ a {
   color: #f32727;
   border-color: #f32727;
 }
+.table_03 tbody tr td:first-of-type {
+  padding-left: 7.5px;
+}
+.table_03 tbody tr td:last-of-type {
+  padding-right: 12.5px;
+}
 .table_03 th, .table_03 td {
   line-height: 20px;
   letter-spacing: -0.56px;
@@ -248,12 +259,14 @@ a {
   border-bottom: 1px solid #ecedf2;
 }
 .table_04 tbody th, .table_05 tbody th {
+  line-height: 22px;
   padding: 9.72px 8px 9.72px 18px;
   text-align: left;
   font-family: "Noto Sans KR";
   font-weight: 400;
 }
 .table_04 tbody td, .table_05 tbody td {
+  line-height: 22px;
   padding: 14px 0 14px 18px;
   font-family: "Roboto";
   font-weight: 400;
@@ -284,15 +297,22 @@ a {
   color: #cccccc;
   letter-spacing: -0.11px;
 }
-.table_04 tbody td.schedule, .table_05 tbody td.schedule {
+.table_04 tbody td .airplane, .table_05 tbody td .airplane {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 115px;
+  height: 40px;
+  border-radius: 100px;
+  background-color: #ffffff;
   text-align: center;
 }
-.table_04 tbody td.schedule img, .table_05 tbody td.schedule img {
+.table_04 tbody td .airplane img, .table_05 tbody td .airplane img {
   width: 15px;
   height: 15px;
   margin-right: 4.5px;
 }
-.table_04 tbody td.schedule span, .table_05 tbody td.schedule span {
+.table_04 tbody td .airplane span, .table_05 tbody td .airplane span {
   line-height: 24px;
   font-family: "Noto Sans KR";
   font-size: 16px;
@@ -319,6 +339,7 @@ a {
 }
 .table_06 {
   margin-bottom: 30px;
+  color: #242428;
 }
 .table_06 tbody tr {
   border-bottom: 1px solid #ecedf2;
@@ -344,6 +365,7 @@ a {
 }
 .table_06 tbody tr .inclusion > ul > li, .table_06 tbody tr .not_inclusion > ul > li {
   position: relative;
+  margin-bottom: 4px;
   padding-left: 4px;
   font-family: "Roboto";
 }
@@ -357,6 +379,9 @@ a {
   height: 2px;
   background-color: #62676c;
 }
+.table_06 tbody tr .inclusion > ul > li:last-of-type, .table_06 tbody tr .not_inclusion > ul > li:last-of-type {
+  margin-bottom: 0;
+}
 .table_06 tbody tr .detail > button {
   line-height: 18px;
   padding: 4px 12px 6px;
@@ -366,6 +391,7 @@ a {
   font-size: 13px;
   font-weight: 400;
   letter-spacing: -0.39px;
+  color: #242428;
 }
 .table_06 tbody tr .detail > button:first-of-type {
   margin: 0 10px 14px 0;
@@ -385,7 +411,7 @@ a {
 }
 .table_07 tbody tr td {
   line-height: 22px;
-  padding: 12px 0;
+  padding: 23px 0;
   text-align: center;
   font-weight: 400;
   color: #242428;
@@ -438,22 +464,40 @@ a {
 .table_10 {
   margin-bottom: 10px;
 }
+.table_13 {
+  font-family: "Noto Sans KR";
+}
 .table_13 thead th {
   line-height: 20px;
   padding: 14px 18px;
   letter-spacing: -0.56px;
 }
 .table_13 tbody td {
-  padding: 9px 7.5px;
+  line-height: 22px;
+  padding: 9px 7.5px 6px;
   text-align: center;
   vertical-align: top;
   letter-spacing: -0.56px;
+}
+.table_13 tbody td.reserve_day, .table_13 tbody td.reserve_number {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 400;
+}
+.table_13 tbody td.product_name, .table_13 tbody td.reserve_state {
+  font-size: 14px;
+  font-weight: 400;
+}
+.table_13 tbody td.start_date {
+  font-family: "Roboto";
+  font-size: 13px;
+  font-weight: 500;
 }
 .table_13 tbody td:first-of-type {
   padding-left: 18px;
 }
 .table_13 tbody td:last-of-type {
-  padding-right: 18px;
+  padding-right: 15px;
 }
 .table_13 tbody td.product_name {
   text-align: left;
@@ -548,7 +592,7 @@ a {
   font-size: 12px;
   font-weight: 500;
   letter-spacing: -0.36px;
-  color: #62676c;
+  color: #242428;
 }
 #footer .footer_contents .company_info_wrap .copy_right {
   line-height: 16px;
@@ -558,8 +602,12 @@ a {
   letter-spacing: -0.48px;
   color: #a7acb6;
 }
-#footer .footer_contents .footer_etc_wrap .footer_logo {
+#footer .footer_contents .footer_etc_wrap h2 {
   margin-bottom: 16px;
+}
+#footer .footer_contents .footer_etc_wrap h2 .footer_logo {
+  width: 126px;
+  height: 49px;
 }
 #footer .footer_contents .footer_etc_wrap .footer_sns_wrap {
   display: flex;
