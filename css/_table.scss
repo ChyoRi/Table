@@ -449,6 +449,7 @@
   }
 
   &_13 {
+    width: 743px;
     font-family: "Noto Sans KR";
 
     thead {
@@ -482,14 +483,6 @@
           font-family: "Roboto";
           font-size: 13px;
           font-weight: 500;
-        }
-
-        &:first-of-type {
-          padding-left: 18px;
-        }
-
-        &:last-of-type {
-          padding-right: 15px;
         }
 
         &.product_name {

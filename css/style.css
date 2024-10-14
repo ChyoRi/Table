@@ -465,6 +465,7 @@ a {
   margin-bottom: 10px;
 }
 .table_13 {
+  width: 743px;
   font-family: "Noto Sans KR";
 }
 .table_13 thead th {
@@ -492,12 +493,6 @@ a {
   font-family: "Roboto";
   font-size: 13px;
   font-weight: 500;
-}
-.table_13 tbody td:first-of-type {
-  padding-left: 18px;
-}
-.table_13 tbody td:last-of-type {
-  padding-right: 15px;
 }
 .table_13 tbody td.product_name {
   text-align: left;
