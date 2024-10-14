@@ -1,16 +1,16 @@
-.table_title {
-  line-height: 16px;
-  margin-bottom: 10px;
-  font-family: "Noto Sans KR";
-  font-size: 16px;
-  letter-spacing: -0.64px;
-  color: map-get($color, black-01);
-}
-
 .table {
   margin: 0 auto;
   border-top: 1px solid map-get($color-line, line-01);
   font-size: 14px;
+
+  &_title {
+    line-height: 16px;
+    margin-bottom: 10px;
+    font-family: "Noto Sans KR";
+    font-size: 16px;
+    letter-spacing: -0.64px;
+    color: map-get($color, black-01);
+  }
 
   th {
     background-color: map-get($color-background, bg-01);
